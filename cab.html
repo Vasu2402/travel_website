@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Online Cab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="cab.css" rel="stylesheet">
+    
+    <style>
+        .image1 {
+            background-image: url('https://img.freepik.com/free-photo/yellow-taxi-streets-new-york-city-night_23-2150820164.jpg?ga=GA1.1.1032586045.1725301944&semt=ais_hybrid');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 500px;
+            padding: 20px;
+        }
+        .footer{
+    background-color: #333;
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.footer .box-container .box{
+    padding: 1rem 0;
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+    font-size:2.5rem;
+    padding: .7rem 0;
+    color: #fff;
+}
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    padding: .7rem 0;
+    color: #eee;
+}
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding: .7rem 0;
+    color: #eee;
+}
+.footer .box-container .box a:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+.footer .credit{
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    font-size:2rem ;
+    font-weight: normal;
+    color: #fff;
+    border-top: .1rem solid rgba(255,255,255,.2);
+}
+.footer .credit span{
+    color: var(--orange);
+}
+    </style>
+</head>
+<body>
+    <div class="container my-5 "  style=" background-image: url('https://img.freepik.com/free-photo/yellow-taxi-streets-new-york-city-night_23-2150820164.jpg?ga=GA1.1.1032586045.1725301944&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    padding: 20px;">
+        <div class="row">
+            <div class="col-md-4 m-5 bg-dark text-white p-4 rounded">
+                <h1 class="mb-4">Book Your Online Cab</h1>
+                <div class="d-flex mb-1">
+                    <!-- <div class="form-check me-4">
+                        <input class="form-check-input" type="radio" id="one-way" name="trip-type" value="one-way">
+                        <label class="form-check-label" for="one-way">One Way</label>
+                    </div> -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="round-trip" name="trip-type" value="round-trip">
+                        <label class="form-check-label" for="round-trip">Round Trip</label>
+                    </div>
+                </div>
+                <div class="mb-1">
+                    <label for="pickup-location" class="form-label">Pickup</label>
+                    <input type="text" id="pickup-location" class="form-control" placeholder="Select Location">
+                    
+                </div>
+                <div class="mb-1">
+                    <label for="drop-location" class="form-label">Drop</label>
+                    <input type="text" id="drop-location" class="form-control" placeholder="Select Location">
+                    
+                </div>
+                
+                <div class="mb-1">
+                    <label for="pickup-date" class="form-label">Pickup Date</label>
+                    <input type="date" id="pickup-date" class="form-control" placeholder="Select date">
+                </div>
+                <div class="mb-1">
+                    <label for="pickup-time" class="form-label">Pickup Time</label>
+                    <input type="time" id="pickup-time" class="form-control" placeholder="Select time">
+                </div>
+                <div class="mb-1">
+                    <label for="return-date" class="form-label">Return Date</label>
+                    <input type="date" id="return-date" class="form-control" placeholder="Select date">
+                </div>
+                <div class="mb-1">
+                    <label for="return-time" class="form-label">Return Time</label>
+                    <input type="time" id="return-time" class="form-control" placeholder="Select time">
+                </div>
+                <button class="btn btn-primary w-100">Search Cabs</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-7W1rFgENW3/VtZ3J8gNQXHyyCBIZy0cLIIu7BcmU24d5j99W9aNS6zWNRwpwX2Cn" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+    <hr class="my-5">
+
+    <div class="container">
+        <h1 class="text-center mb-4">Our Awesome Vehicles</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm-JRkiLxozYY0e80eqDXJhCzlQXDOE-WtHA&s" class="card-img-top" height="250px" width="200" alt="Sedan">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Sedan</h3>
+                        <p class="card-text">(6 Cars)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top" height="250px" width="200" alt="Micro">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Micro</h3>
+                        <p class="card-text">(8 Cars)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <img src="https://img.freepik.com/premium-photo/warehouse-with-lot-boxes-it-that-says-product_198067-1097849.jpg?semt=ais_hybrid" class="card-img-top" height="250px" width="200" alt="SUV">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">CUV</h3>
+                        <p class="card-text">(4 Cars)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <img src="imagesbm.jpg" class="card-img-top" height="250px" width="200" alt="SUV">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">SUV</h3>
+                        <p class="card-text">(5 Cars)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <img src="pick.jpg" class="card-img-top" height="250px" width="200" alt="Pickup Truck">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Pickup</h3>
+                        <p class="card-text">(3 Pickup Trucks)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTyDXKbjGkkdPhQi_PQHCQFO--5dHA-hn-Ow&s" class="card-img-top" height="250px" width="200" alt="Coupe">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Coupe</h3>
+                        <p class="card-text">(9 Cars)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center my-5">Why Choose Us</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white text-center">
+                    <div class="icon  mx-auto my-3"><img src="https://img.freepik.com/premium-photo/lightning-bolt-black-background_853677-168346.jpg?ga=GA1.1.1032586045.1725301944&semt=ais_hybrid" height="60px" width="50px"> </div>
+                    <h2>Advance Booking</h2>
+                    <p>Happiness prosperous impression had conviction For every delay in they Extremity now.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white text-center">
+                    <div class="icon icon-leaf mx-auto my-3"><img src="https://img.freepik.com/free-vect or/illustration-plant_53876-8655.jpg?ga=GA1.1.1032586045.1725301944&semt=ais_hybrid" height="60px" width="50pc"></div>
+                    <h2>Economical Trip</h2>
+                    <p>Extremity now strangers contained breakfast him discourse additions Sincerity.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white text-center">
+                    <div class="icon icon-shield mx-auto my-3"><img src="https://img.freepik.com/premium-vector/white-padlock-hexagonal-pattern-padlock-safety-equipment-black-background-with-copy-space_545033-1699.jpg?ga=GA1.1.1032586045.1725301944&semt=ais_hybrid" height="60px" width="50px"></div>
+                    <h2>Secure and Safer</h2>
+                    <p>Perpetual extremity now strangers contained breakfast him discourse additions.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white text-center">"
+                    <div class="icon icon-car mx-auto my-3"><img src="veh.jpg" height="60px" width="50px"></div>
+                    <h2>Vehicle Options</h2>
+                    <p>The Prosperous impression had conviction For every delay in they Extremity now.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white text-center">"
+                    <div class="icon icon-wifi mx-auto my-3"><img src="wifi.jpg" height="60px" width="50px"></div>
+                    <h2>Cab Entertainment</h2>
+                    <p>Extremity now strangers contained breakfast him discourse additions Sincerity.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" style="height: 100px;">
+                <div class="card bg-dark text-white text-center">
+                    <div class="icon icon-thumbs-up mx-auto my-3"><img src="oranges.png" height="60px" width="50px" style="padding-top: 10px;"></div>
+                    <h2>Happy Customers</h2>
+                    <p>Extremity now strangers contained breakfast him discourse additions Sincerity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <h1>Frequently Asked Questions</h1>
+      
+        <div class="faq-item">
+          <div class="faq-question">How Does it Work?</div>
+          <span class="plus-icon">+</span>
+          <div class="faq-answer">
+              Yet remarkably appearance gets him his projection. Diverted endeavor bed peculiar men the not desirous. Acuteness abilities ask can offending furnished fulfilled sex. Warrant fifteen exposed ye at mistake. Blush since so in noisy still built up an again. As young ye hopes no he place means. Partiality diminution gay yet entreaties admiration. In mention perhaps attempt pointed suppose. Unknown ye chamber of warrant of Norland arrived.
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <div class="faq-question">What are monthly tracked users?</div>
+          <span class="plus-icon">+</span>
+          <div class="faq-answer">
+              What deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behavior arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he prospect elegance followed no overcame possible it on. Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage Mr be.
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <div class="faq-question">What if I go with my prepaid monthly</div>
+          <span class="plus-icon">+</span>
+          <div class="faq-answer">
+              Post no so what deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behavior arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he prospect elegance followed no overcame possible it on. Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage Mr be. Hold do at tore in park feet near my case. Invitation at understood occasional sentiments insipidity inhabiting in. Off melancholy alteration principles old. Is do speedily kindness properly oh. Respect article painted cottage he is offices parlors.
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <div class="faq-question">What's the difference between cabs and taxi</div>
+          <span class="plus-icon">+</span>
+          <div class="faq-answer">
+              What deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behavior arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he prospect elegance followed no overcame possible it on. Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage Mr be.
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <div class="faq-question">How can I check the fare for my Booking ride?</div>
+          <span class="plus-icon">+</span>
+          <div class="faq-answer">
+              Post no so what deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behavior arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he prospect elegance followed no overcame possible it on. Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage Mr be. Hold do at tore in park feet near my case. Invitation at understood occasional sentiments insipidity inhabiting in. Off melancholy alteration principles old. Is do speedily kindness properly oh. Respect article painted cottage he is offices parlors.
+          </div>
+        </div>
+      
+        <div class="faq-item">
+          <div class="faq-question">Do and Don'ts - Tips for a Safe Trip</div>
+          <span class="plus-icon">+</span>
+          <div class="faq-answer">
+              Post no so what deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behavior arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he prospect elegance followed no overcame possible it on. Improved own provided blessing may peculiar domestic. Sight house has sex never. No visited raising gravity outward subject my cottage Mr be. Hold do at tore in park feet near my case. Invitation at understood occasional sentiments insipidity inhabiting in. Off melancholy alteration principles old. Is do speedily kindness properly oh. Respect article painted cottage he is offices parlors.
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+
+      <div class="logo">
+        <img src="01.svg" alt="Product" />
+        
+    </div>
+    
+    <div class="logo">
+        <img src="02.svg" alt="PinPoint" />
+        
+    </div>
+    
+    <div class="logo">
+        <img src="03.svg" alt="Wanderer" />
+        
+    </div>
+    
+    <div class="logo">
+        <img src="04.svg" alt="Voyage" />
+        
+    </div>
+    <div class="logo">
+        <img src="06.svg" alt="other" />
+        
+    </div>
+</div>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>About us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="box">
+            <h3>Branch Locations</h3>
+            <a href="#">India</a>
+            <a href="#">USA</a>
+            <a href="#">Jpaan</a>
+            <a href="#">France</a>
+        </div>
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="Front.html">Home</a>
+            <a href="Front.html">Book</a>
+            <a href="Front.html">Packages</a>
+            <a href="Front.html">Services</a>
+            <a href="Front.html">gallery</a>
+            <a href="Front.html">review</a>
+            <a href="Front.html">Contact</a>
+            <a href="tours.html">Tours</a>
+        </div>
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+    </div>
+    <h1 class="credit"> created by <span> VEDANSH</span> all rights reserved</h1>
+</section>
+      <script>
+      const faqItems = document.querySelectorAll('.faq-item');
+      
+      faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+          item.classList.toggle('active');
+        });
+      });
+      
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-7W1rFgENW3/VtZ3J8gNQXHyyCBIZy0cLIIu7BcmU24d5j99W9aNS6zWNRwpwX2Cn" crossorigin="anonymous"></script>
+</body>
+</html>

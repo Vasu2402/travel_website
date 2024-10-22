@@ -1,0 +1,113 @@
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Hero Section Animation */
+  .hero h1 {
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+  
+  .search-bar {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Exclusive Cards Hover Effect */
+  .exclusives div {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .exclusives div:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Trending Places Hover Effect */
+  .trending div {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .trending div:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Call to Action Animation */
+  .cta {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Stories Section Animation */
+  .stories div {
+    animation: scaleUp 1s ease-in-out;
+  }
+  
+  /* Footer Icons Hover Effect */
+  .footer a {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .footer a:hover {
+    color: var(--orange);
+    transform: translateY(-5px);
+  }
+  
+  /* Navbar Links Hover Effect */
+  header .navbar a {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  header .navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: var(--orange);
+    transition: width 0.3s ease;
+  }
+  
+  header .navbar a:hover::after {
+    width: 100%;
+  }
+  
+  /* Search Bar Container Animation */
+  header .search-bar-container {
+    animation: slideIn 0.5s ease-in-out;
+  }

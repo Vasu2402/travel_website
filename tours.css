@@ -1,0 +1,573 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+  --orange: #ffa500;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* nav section -------------------------*/
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span {
+    font-size: 3.5rem;
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+.heading span.space {
+    background: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--orange);
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: rgba(255, 165, 0, .2);
+    color: var(--orange);
+}
+
+header {
+    height : 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    color: var(--orange);
+}
+
+header .navbar a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 .8rem;
+}
+
+header .navbar a:hover {
+    color: var(--orange);
+}
+
+header .icons i {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover {
+    color: var(--orange);
+}
+
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: #333;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.3s ease; /* Added smooth transition */
+}
+
+header .search-bar-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+
+header .search-bar-container label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+    color: var(--orange);
+}
+
+.login-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Changed from top to opacity */
+    transform: translateY(-100%); /* Changed from top to transform */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Updated transition for smooth animation */
+}
+
+.login-form-container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.login-form-container form {
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 50rem;
+}
+
+.login-form-container form h3 {
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.login-form-container form .box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem 0;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    text-transform: none;
+}
+
+.login-form-container form .box:focus {
+    border-color: var(--orange);
+}
+
+.login-form-container form #remember {
+    margin: 2rem 0;
+}
+
+.login-form-container form label {
+    font-size: 1.5rem;
+}
+
+.login-form-container form .btn {
+    display: block;
+    width: 100%;
+}
+
+.login-form-container form p {
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.login-form-container p a {
+    color: var(--orange);
+}
+
+.login-form-container form p a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.login-form-container #form-close {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu-bar {
+    color: #fff;
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Hero Section ------------------------------------*/
+.hero{
+  min-height : 100vh;
+  width : 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./Assets/assets/images/banner.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Nav Bar---------------------------------------- */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+}
+
+.logo{
+  width: 140px;
+  cursor: pointer;
+}
+
+.nav-links li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.nav-links li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.register-btn{
+  background: #fff;
+  color: #000;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* container ----------------------------------------- */
+
+.container{
+  padding: 0 7%;
+}
+
+.hero h1{
+  font-size: 4vw;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  padding-top: 22%;
+}
+
+.search-bar{
+  background: #fff;
+  width: 70%;
+  margin: 30px auto;
+  padding: 6px 10px 6px 30px;
+  border-radius: 50px;
+}
+
+.search-bar form{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-bar form input{
+  display: block;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.search-bar form button{
+  background: var(--orange);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+}
+
+.search-bar form button img{
+  width: 15px;
+  margin-top: 7px;
+}
+
+.location-input{
+  flex: 1;
+}
+
+.search-bar form label{
+  font-weight: 600;
+}
+
+/* exclusives -------------------------------------- */
+
+.sub-title{
+  margin: 50px 0 50px;
+  font-size: 2.2vw;
+  font-weight: 500;
+  color: #333;
+}
+
+.exclusives{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-gap: 30px;
+}
+
+.exclusives div img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.exclusives div{
+  position: relative;
+}
+
+.exclusives div span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* trending places----------------------------- */
+
+.trending{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.trending div img{
+  width : 100%;
+  border-radius: 10px;
+}
+
+.trending h3{
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* call to action --------------------- */
+
+.cta{
+  margin: 80px 0;
+  background-image: linear-gradient(to right, #3f2321, transparent),url(./Assets/assets/images/banner-2.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 5%;
+  color: #fff;
+}
+
+.cta h3{
+  font-size: 4vw;
+  line-height: 5.3vw;
+  font-weight: 500;
+}
+
+.cta p{
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.cta-btn{
+  background: var(--orange);
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* travellers stories---------------------- */
+
+.stories{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.stories div img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.stories div{
+  position: relative;
+  text-align: center;
+}
+
+.stories p{
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 26px;
+}
+
+.start-btn{
+  text-decoration: none;
+  background: var(--orange);
+  color: #fff;
+  width: 80%;
+  max-width: 350px;
+  display: block;
+  text-align: center;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+
+/* about msg --------------------- */
+
+.about-msg{
+  text-align: center;
+  margin: 80px 0;
+  color: #333;
+  font-size: 17px;
+}
+
+.about-msg h2{
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* footer ----------------------------- */
+
+.footer{
+  margin: 80px 0 10px;
+  text-align: center;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #999;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.footer hr{
+  background: #999;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  margin: 20px 0;
+}
+
+.footer p{
+  padding-bottom: 15px;
+}
+
+nav .fa-bars{
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  html {
+      font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+      padding: 2rem;
+  }
+  section{
+      padding:2rem ;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-bar {
+      display: block; 
+      height: 8.1rem ;
+  }
+  header .navbar {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      background: #333;
+      border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+      padding: 1rem 2rem;
+      clip-path: polygon( 0, 100% 0, 100% 0, 0 0);
+      transition: clip-path 0.3s ease; 
+  }
+  header .navbar.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .navbar a {
+      display: block;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      background: #222;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+      font-size: 50%;
+  }
+  .heading span{
+      font-size: 2.5rem;
+  }
+  .contact .row form .inputbox input{
+      width: 100%;
+  }
+}
