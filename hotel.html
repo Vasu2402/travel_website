@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Nav</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <!-- <img src="C:\Users\HP\OneDrive\ドキュメント\projrct\hot.png" alt="Booking Logo" /> -->
+            <span>Booking</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Listings</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Accounts</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#" class="nav-item selected">Hotel</a>
+            <a href="#">Flight</a>
+            <a href="#">Tour</a>
+            <a href="cab.html" target="_blank">Cab</a>
+        </div>
+        <div class="profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+              </svg>
+            <!-- <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic"> -->
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find the top <br> <span>Hotels nearby.</span></h1>
+            <p>We bring you not only a stay option, but an experience in your budget to enjoy the luxury.</p>
+            <div class="buttons">
+                <a href="#" class="btn primary">Discover Now</a>
+                <a href="https://youtu.be/qemqQHaeCYo?si=fA7qW9qSNo9QvGui" target="_blank" class="btn secondary">
+                    Watch our story
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="pexels-ollivves-1056497.jpg" alt="Hotels Nearby">
+        </div>
+       
+    </section>
+
+    <section class="booking-form">
+        <h2>Check Availability</h2>
+        <div class="form-container">
+            <div class="form-item">
+                <label for="location"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg><br></label>
+                <input type="text" id="location" placeholder="Select location">
+            </div>
+            <div class="form-item">
+                <label for="pickup-date" class="form-label">Pickup Date</label>
+                    <input type="date" id="pickup-date" name="pickupDate" class="form-control" required>
+            </div>
+            <div class="form-item">
+                <label for="return-date" class="form-label">Return Date</label>
+                    <input type="date" id="return-date" name="returnDate" class="form-control">
+            </div>
+            <div class="form-item">
+                <label for="guests"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                  </svg><br></label>
+                <input type="text" id="guests" placeholder="2 Guests 1 Room">
+            </div>
+            <!-- <button class="search-btn"><img src="search-icon.png" alt="Search Icon"></button> -->
+            <div class="container">
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </section>
+    <section class="holiday-section">
+        <div class="content-container">
+            <div class="image-container">
+                <img src="pexels-pixabay-38238.jpg" alt="Holiday Image" class="main-image">
+                <img src="kash.jpg" class="main-image">
+                <!-- <div class="client-rating">
+                    <div class="rating-info">
+                        <span class="thumb-icon">👍</span>
+                        <div class="client-info">
+                            <p>Client</p>
+                            <div class="avatars">
+                                <img src="client1.jpg" alt="Client 1">
+                                <img src="client2.jpg" alt="Client 2">
+                                <img src="client3.jpg" alt="Client 3">
+                                <img src="client4.jpg" alt="Client 4">
+                                <span class="more-clients">1k+</span>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <p>Rating</p>
+                            <span class="rating-value">4.5 ⭐</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="text-content">
+                <h1>The Best Holidays Start Here!</h1>
+                <p>Book your hotel with us and don't forget to grab an awesome hotel deal to save massively on your stay.</p>
+                <div class="services">
+                    <div class="service">
+                        <div class="icon">🍽️</div>
+                        <h3>Quality Food</h3>
+                        <p>Departure defective arranging rapturous did. Conduct denied adding worthy little.</p>
+                    </div>
+                    <div class="service">
+                        <div class="icon">⏱️</div>
+                        <h3>Quick Services</h3>
+                        <p>Supposing so be resolving breakfast am or perfectly.</p>
+                    </div>
+                    <div class="service">
+                        <div class="icon">🔒</div>
+                        <h3>High Security</h3>
+                        <p>Arranging rapturous did believe him all had supported.</p>
+                    </div>
+                    <div class="service">
+                        <div class="icon">⚡</div>
+                        <h3>24 Hours Alert</h3>
+                        <p>Rapturous did believe him all had supported.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" align="center">EXPLORE NEARBY</h1>
+    <div class="slider">
+        
+        <div class="slider-track">
+            <div class="slide"><img src="hawa mahal.jpg" alt="hawa"></div>
+            <div class="slide"><img src="reed fort.jpg" alt="Chickpea Salad Sandwich"></div>
+            <div class="slide"><img src="taj mahal.jpg" alt="Coffee"></div>
+            <div class="slide"><img src="amritsar.jpg" alt="Upma"></div>
+            <!-- Repeat slides for seamless loop -->
+            <div class="slide"><img src="kashmir.jpg" alt="Aloo Paratha"></div>
+            
+            <div class="slide"><img src="kutub minar.jpg" alt="Chickpea Salad Sandwich"></div>
+            <div class="slide"><img src="tungnath.jpg" alt="Coffee"></div>
+            
+            
+            </div>
+        </div>
+    </div>
+
+    <section class="featured-hotels">
+        <h1>Featured Hotels</h1>
+        <div class="hotels-grid">
+            <div class="hotel">
+                <img src="new york.jpg" alt="New York Hotel">
+                <div class="location">New York</div>
+            </div>
+            <div class="hotel">
+                <img src="cali hotel.jpg" alt="California Hotel">
+                <div class="location">California</div>
+            </div>
+            <div class="hotel">
+                <img src="la hotel.jpg" alt="Los Angeles Hotel">
+                <div class="location">Los Angeles</div>
+            </div>
+            <div class="hotel">
+                <img src="chicago hotel.jpg" alt="Chicago Hotel">
+                <div class="location">Chicago</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hotel-prices">
+        <div class="hotel-info">
+            <h2>Baga Comfort</h2>
+            <p class="price">$455 <span>/starting at</span></p>
+            <div class="rating">4.5 ★</div>
+        </div>
+        <div class="hotel-info">
+            <h2>New Apollo Hotel</h2>
+            <p class="price">$585 <span>/starting at</span></p>
+            <div class="rating">4.8 ★</div>
+        </div>
+        <div class="hotel-info">
+            <h2>New Age Hotel</h2>
+            <p class="price">$385 <span>/starting at</span></p>
+            <div class="rating">4.6 ★</div>
+        </div>
+        <div class="hotel-info">
+            <h2>Helios Beach Resort</h2>
+            <p class="price">$665 <span>/starting at</span></p>
+            <div class="rating">4.8 ★</div>
+        </div>
+    </section>
+    
+    <div class="container">
+        <div class="card">
+            <div class="icon">❤️</div>
+            <h3>24x7 Help</h3>
+            <p>If we fall short of your expectation in any way, let us know</p>
+        </div>
+        <div class="card">
+            <div class="icon">💲</div>
+            <h3>Payment Trust</h3>
+            <p>All refunds come with no questions asked guarantee</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-section booking">
+            <div class="icon">✈️</div>
+            <h3>Booking</h3>
+            <p>Departure detective arranging rapturous did believe him all had supported.</p>
+            <p>📞 +1234 568 963</p>
+            <p>📧 example@gmail.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Page</h3>
+            <ul>
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>News and Blog</li>
+                <li>Meet a Team</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Link</h3>
+            <ul>
+                <li>Sign up</li>
+                <li>Sign in</li>
+                <li>Privacy Policy</li>
+                <li>Terms</li>
+                <li>Cookie</li>
+                <li>Support</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Global Site</h3>
+            <ul>
+                <li>India</li>
+                <li>California</li>
+                <li>Indonesia</li>
+                <li>Canada</li>
+                <li>Malaysia</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Booking</h3>
+            <ul>
+                <li>🏨 Hotel</li>
+                <li>✈️ Flight</li>
+                <li>🌍 Tour</li>
+                <li>🚗 Cabs</li>
+            </ul>
+        </div>
+        <div class="social-section">
+            <h3>Follow us on</h3>
+            <div class="social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="insta.jpg" alt="Instagram"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="linkdin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+   
+</body>
+</html>
