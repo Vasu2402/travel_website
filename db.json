@@ -109,6 +109,12 @@
       "username": "Sneha",
       "email": "sneha@gmail.com",
       "password": "12345678"
+    },
+    {
+      "id": "dbc4",
+      "username": "parth",
+      "email": "parth@gmail.com",
+      "password": "12345678"
     }
   ],
   "posts": [
