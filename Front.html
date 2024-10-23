@@ -6,7 +6,7 @@
     <title>Travel Website - HOME</title>
     <link rel="icon" type="image/x-icon" href="./Assets/travelicon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,6 +24,7 @@
             <a href="#contact">Contact</a>
             <a href="tours.html">Tours</a> 
             <a href="cab.html">Cabs</a> 
+            <a href="hotel.html">Hotels</a> 
             <a href="Login.html" style="margin-left:60px;">Logout</a>
         </nav>
     </header>
@@ -32,7 +33,7 @@
 
     <section class="home" id="home">
         <div class="content">
-            <h3>Adventure is worthwhile</h3>
+            <bold><h3>Adventure is worthwhile</h3></bold>
             <p>Discover new places with us, adventure awaits</p>
             <a href="#" class="btn">Discover more</a>
         </div>
@@ -66,23 +67,8 @@
                 <img src="./Assets/img2.avif" alt="Destination Image">
             </div>
             <form id="book-form">
-                <div class="inputBox">
-                    <h3>Where To</h3>
-                    <input type="text" name="whereTo" placeholder="Enter Destination" required>
-                </div>
-                <div class="inputBox">
-                    <h3>How Many</h3>
-                    <input type="number" name="guests" placeholder="Number of Guests" min="1" max="10" required>
-                </div>
-                <div class="inputBox">
-                    <h3>Arrivals</h3>
-                    <input type="date" name="arrivals" required>
-                </div>
-                <div class="inputBox">
-                    <h3>Leaving</h3>
-                    <input type="date" name="leaving" required>
-                </div>
-                <input type="submit" class="btn" value="Book Now">
+               <div style="text-align: center; font-size: 50px;" ><h1>get deals upto 20-30% off</div><h1>
+                <a href="book.html" class="btn" style="margin-left: 275px;">Book Now</a>
             </form>
         </div>
         
@@ -401,24 +387,28 @@
             <span>c</span>
             <span>t</span>
         </h1>
+        <script src="contactus.js"></script>
         <div class="row">
             <div class="image">
                 <img src="./Assets/img9.png">
             </div>
-            <script src="contactus.js"></script>
-            <form id="contact-form" onsubmit="savePost(event)"> <!-- Pass event as an argument -->
+            <script></script> 
+            <form id="contact-form" onsubmit="savePost(event)"> 
                 <div class="inputbox">
                     <input type="text" placeholder="Enter your Name" id="name" required>
                     <input type="email" placeholder="Enter your email" id="email" required>
                 </div> 
                 <div class="inputbox">
-                    <input type="number" placeholder="Enter your Number" id="number" required>
+                    <input type="number" placeholder="Enter your Number" id="number" minlength="10" maxlength="10" required>
                     <input type="text" placeholder="Subject....." id="subject" required>
                 </div> 
                 <textarea placeholder="Message..." cols="30" rows="10" id="message" required></textarea> 
-                <input type="submit" class="btn" value="Send Message"> <!-- Change to type="submit" -->
+                <input type="submit" class="btn" value="Send Message">
             </form>
-        </div>       
+        </div>
+        
+        
+        
         
 
     </section>
@@ -429,6 +419,13 @@
             <div class="box">
                 <h3>About us</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#"> <i class="fas fa-phone"></i> 0092-301-9583959 </a>
+                    <a href="#"> <i class="fas fa-phone"></i> 0092-301-5273527 </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> Travel.com </a>
+                    <a href="#"> <i class="fas fa-map"></i>Chitkara-Universityy-Punjab</a>
+                 </div>
             </div>
             <div class="box">
                 <h3>Branch Locations</h3>
@@ -439,32 +436,32 @@
             </div>
             <div class="box">
                 <h3>Quick Links</h3>
-                <a href="#home">Home</a>
-                <a href="#book">Book</a>
-                <a href="#packages">Packages</a>
-                <a href="#services">Services</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#review">Review</a>
-                <a href="#contact">Contact</a>
-                <a href="tours.html">Tours</a> 
-                <a href="cab.html">Cabs</a> 
+                <a href="Front.html"> <i class="fas fa-angle-right"></i> Home</a>
+                <a href="book.html"> <i class="fas fa-angle-right"></i> Book</a>
+                <a href="package.html"> <i class="fas fa-angle-right"></i> Packages</a>
+                <a href="Front.html"> <i class="fas fa-angle-right"></i> Services</a>
+                <a href="Front.html"> <i class="fas fa-angle-right"></i> Contact us</a>
+                <a href="tours.html"> <i class="fas fa-angle-right"></i> Tours</a>
+                <a href="cab.html"> <i class="fas fa-angle-right"></i> Cabs</a>
+                <a href="hotel.html"> <i class="fas fa-angle-right"></i> Hotels</a>
             </div>
             <div class="box">
                 <h3>Follow Us</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">twitter</a>
-                <a href="#">linkedin</a>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
             </div>
         </div>
-        <h1 class="credit"> created by <span> VASU</span> all rights reserved</h1>
+        <h1 class="credit"> created by <span> VASU  </span>| all rights reserved</h1>
     </section>
 
 
 
 
     <script src="s.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
       
 </body>
 </html>

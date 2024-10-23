@@ -21,13 +21,75 @@
       "guests": "1",
       "arrivals": "2024-10-23",
       "leaving": "2024-10-25"
+    },
+    {
+      "id": "d346",
+      "name": "Vasu",
+      "email": "vasu1239.be23@chitkara.edu.in",
+      "phone": "8708962257",
+      "address": "tryugiojpk[l",
+      "location": "India",
+      "guests": "2",
+      "arrivals": "2024-10-25",
+      "leaving": "2024-10-30"
+    },
+    {
+      "id": "21b8",
+      "name": "vikas",
+      "email": "tjyhku@gmail.com",
+      "phone": "09685421364",
+      "address": "dwevrf",
+      "location": "India",
+      "guests": "5",
+      "arrivals": "2024-11-01",
+      "leaving": "2024-11-08"
+    },
+    {
+      "id": "d0d9",
+      "trip-type": "one-way",
+      "pickup": "Chitkara",
+      "drop": "chandigarh",
+      "pickupDate": "2024-10-24",
+      "pickupTime": "16:22",
+      "returnDate": "",
+      "returnTime": ""
     }
   ],
   "packages": [
     {
       "id": "1",
-      "name": "India",
-      "image": "./Assets/img-4.jpg",
+      "name": "Jaipur",
+      "image": "./Assets/img4.jpeg",
+      "description": "Explore the rich history and vibrant culture of Jaipur. From the majestic Taj Mahal to the bustling streets of Mumbai, there's an adventure waiting at every corner."
+    },
+    {
+      "id": "1",
+      "name": "Mumbai",
+      "image": "./Assets/img3.jpg",
+      "description": "Explore the rich history and vibrant culture of Mumbai. From the majestic Taj Mahal to the bustling streets of Mumbai, there's an adventure waiting at every corner."
+    },
+    {
+      "id": "1",
+      "name": "Paris",
+      "image": "./Assets/img5.jpeg",
+      "description": "Explore the rich history and vibrant culture of Paris. From the majestic Taj Mahal to the bustling streets of Mumbai, there's an adventure waiting at every corner."
+    },
+    {
+      "id": "1",
+      "name": "Singapore",
+      "image": "./Assets/img6.jpeg",
+      "description": "Explore the rich history and vibrant culture of India. From the majestic Taj Mahal to the bustling streets of Mumbai, there's an adventure waiting at every corner."
+    },
+    {
+      "id": "1",
+      "name": "Dubai",
+      "image": "./Assets/img7.avif",
+      "description": "Explore the rich history and vibrant culture of India. From the majestic Taj Mahal to the bustling streets of Mumbai, there's an adventure waiting at every corner."
+    },
+    {
+      "id": "1",
+      "name": "Italy",
+      "image": "./Assets/img8.webp",
       "description": "Explore the rich history and vibrant culture of India. From the majestic Taj Mahal to the bustling streets of Mumbai, there's an adventure waiting at every corner."
     },
     {
@@ -115,6 +177,12 @@
       "username": "parth",
       "email": "parth@gmail.com",
       "password": "12345678"
+    },
+    {
+      "id": "036f",
+      "username": "dwefrgthy",
+      "email": "wdefrgt@gmail.com",
+      "password": "123456"
     }
   ],
   "posts": [
@@ -157,6 +225,88 @@
       "number": "69845168543",
       "subject": "iudhnioj",
       "message": "tycuvyiuhojolmkjh"
+    },
+    {
+      "id": "fc25",
+      "name": "df",
+      "email": "wdecd@gmail.com",
+      "number": "1234567890",
+      "subject": "dwefqwgr",
+      "message": "fewrbe"
+    },
+    {
+      "id": "48c6",
+      "name": "vasu",
+      "email": "sdfg@gmail.com",
+      "number": "1234567890",
+      "subject": "ewgrhet3rqef",
+      "message": "53yger"
+    },
+    {
+      "id": "7672",
+      "name": "vasu",
+      "email": "sdfg@gmail.com",
+      "number": "1234567890",
+      "subject": "ewgrhet3rqef",
+      "message": "53yger"
+    },
+    {
+      "id": "1731",
+      "name": "ohnfo",
+      "email": "dionc@gmail",
+      "number": "6854321",
+      "subject": "wefvdf",
+      "message": "eedvc"
+    },
+    {
+      "id": "fbad",
+      "name": "",
+      "email": "",
+      "number": "",
+      "subject": "",
+      "message": ""
+    },
+    {
+      "id": "3ff9",
+      "name": "kvgfik",
+      "email": "lajdhef@gmail.com",
+      "number": "86453",
+      "subject": "oiefh",
+      "message": "iephfpowei"
+    },
+    {
+      "id": "a6ad",
+      "name": "iugihoefj",
+      "email": "lksdnv@gmail",
+      "number": "684531",
+      "subject": "ukhgvw",
+      "message": "oeiufvbh"
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Sunshine",
+      "location": "New York",
+      "pickupDate": "25-10-2024",
+      "returnDate": "30-10-2024",
+      "guests": 2,
+      "id": "4afb"
+    },
+    {
+      "name": "Mountain Retreat",
+      "location": "Colorado",
+      "pickupDate": "2024-10-26",
+      "returnDate": "2024-10-29",
+      "guests": 2,
+      "id": "07dc"
+    },
+    {
+      "name": "Cityscape Hotel",
+      "location": "New York",
+      "pickupDate": "2024-10-25",
+      "returnDate": "2024-10-30",
+      "guests": 1,
+      "id": "01c4"
     }
   ]
 }
